@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
 import { auth } from "../firebase";
+import "../css/Login.css";
+import LoginImage from "../assets/LoginImage.png";
 
 function Login() {
   const history = useHistory();
@@ -33,31 +35,29 @@ function Login() {
 
   return (
     <div className="login">
-      <h1>Sign in</h1>
-
-      <form>
-        <h5>Email</h5>
+      <div className="login__left">
+        <h1>
+          Agro<span>Fresh</span>
+        </h1>
+        <img src={LoginImage} alt="Image" />
+      </div>
+      <div className="login__right">
+        <h1>
+          <span>Log</span>In
+        </h1>
+        <h2>Email</h2>
         <input
           type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-
-        <h5>Password</h5>
+        <h2>Password</h2>
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-
-        <button onClick={signIn} type="submit" className="login__signInButton">
-          Sign in
-        </button>
-      </form>
-
-      <button onClick={register} className="login__registerButton">
-        Create your Account
-      </button>
+      </div>
     </div>
   );
 }

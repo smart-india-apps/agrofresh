@@ -1,0 +1,46 @@
+.login {
+    background-color: #eee;
+    height: 90vh;
+    margin: 5vh;
+    border-radius: 50px;
+    display: flex;
+}
+
+.login__left{
+    flex:0.5;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.login__left > img {
+    padding-top: 50px;
+}
+
+.login__left > h1> span, .login__right > h1> span {
+    color: #BCDB7E;
+}
+
+.login__right{
+    flex:0.5;
+    padding-top: 50px;
+}
+
+.login__right > h1 {
+    margin-left: 50px;
+}
+
+.login__right > h2 {
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+.login__right > input{
+    margin-left: 50px;
+    width: 60%;
+    height: 30px;
+    border-radius: 15px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #cfcfcf;
+}
