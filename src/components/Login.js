@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 import { auth } from "../firebase";
 import "../css/Login.css";
 import LoginImage from "../assets/LoginImage.png";
@@ -60,7 +61,9 @@ function Login() {
         <button onClick={signIn} type="submit" className="login__signInButton">
           LogIn
         </button>
-        <p>No Account? Sign Up here</p>
+        <Link to="/signup">
+          <p className="login__signup">No Account? Sign Up here</p>
+        </Link>
       </div>
     </div>
   );

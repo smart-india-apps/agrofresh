@@ -6,6 +6,11 @@
     display: flex;
 }
 
+a{
+    text-decoration: none;
+    color: #000;
+}
+
 .login__left{
     flex:0.5;
     padding-left: 50px;
@@ -48,15 +53,25 @@
     font-weight: bold;
     font-size: 16px;
     border: 1px solid #cfcfcf;
+    box-shadow: 3px 3px #dcdcdc;
 }
 
-.login__right > p{
+.login__right > input:focus {
+    outline: none;
+}
+
+.login__signup{
     margin-left: 50px;
     margin-top: 10px;
     font-size: 20px;
     font-weight: 700;
     opacity: 0.7;
 }
+
+.login__signup:hover{
+    font-size: 20.3px;
+}
+
 .login__signInButton {
     background-color: #BCDB7E; 
     margin-left: 50px;
@@ -68,8 +83,14 @@
     font-size: 20px;
     border: none;
     margin-top: 25px;
-
+    box-shadow: 3px 3px #dcdcdc;
 }
+
+.login__signInButton:hover{
+    cursor: pointer;
+    color: #fff;
+}
+
 @media(max-width: 768px){
     .login__left > img {
         display:none;
