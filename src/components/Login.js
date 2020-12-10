@@ -39,7 +39,7 @@ function Login() {
         <h1>
           Agro<span>Fresh</span>
         </h1>
-        <img src={LoginImage} alt="Image" />
+        <img src={LoginImage} alt="Login Page" />
       </div>
       <div className="login__right">
         <h1>
@@ -60,6 +60,7 @@ function Login() {
         <button onClick={signIn} type="submit" className="login__signInButton">
           LogIn
         </button>
+        <p>No Account? Sign Up here</p>
       </div>
     </div>
   );
